@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  root 'application#hello'
+  resources :individual_project1s
+  root "individual_project1s#index"
 end
