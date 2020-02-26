@@ -45,4 +45,7 @@ class IndividualProject1sControllerTest < ActionDispatch::IntegrationTest
 
     assert_redirected_to individual_project1s_url
   end
+
 end
+
+# Citation: https://www.learnenough.com/ruby-on-rails-4th-edition-tutorial/static_pages#sec-testing_titles
