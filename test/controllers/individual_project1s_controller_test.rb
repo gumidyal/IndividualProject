@@ -42,8 +42,6 @@ class IndividualProject1sControllerTest < ActionDispatch::IntegrationTest
     assert_difference('IndividualProject1.count', -1) do
       delete individual_project1_url(@individual_project1)
     end
-
-    assert_redirected_to individual_project1s_url
   end
 
 end
