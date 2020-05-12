@@ -28,7 +28,7 @@ class IndividualProject1sController < ApplicationController
 
     respond_to do |format|
       if @individual_project1.save
-        format.html { redirect_to @individual_project1, notice: 'Individual project1 was successfully created.' }
+        format.html { redirect_to @individual_project1, notice: 'Class note was successfully created.' }
         format.json { render :show, status: :created, location: @individual_project1 }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class IndividualProject1sController < ApplicationController
   def update
     respond_to do |format|
       if @individual_project1.update(individual_project1_params)
-        format.html { redirect_to @individual_project1, notice: 'Individual project1 was successfully updated.' }
+        format.html { redirect_to @individual_project1, notice: 'Class note was successfully updated.' }
         format.json { render :show, status: :ok, location: @individual_project1 }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class IndividualProject1sController < ApplicationController
   def destroy
     @individual_project1.destroy
     respond_to do |format|
-      format.html { redirect_to individual_project1s_url, notice: 'Individual project1 was successfully destroyed.' }
+      format.html { redirect_to individual_project1s_url, notice: 'Class note was successfully destroyed.' }
       format.json { head :no_content }
     end
   end

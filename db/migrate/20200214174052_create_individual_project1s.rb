@@ -1,6 +1,6 @@
-class CreateIndividualProject1s < ActiveRecord::Migration[5.1]
+class CreateClassNotes < ActiveRecord::Migration[5.1]
   def change
-    create_table :individual_project1s do |t|
+    create_table :Class Notes do |t|
       t.string :title
       t.text :description
 
